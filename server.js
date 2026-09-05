@@ -83,33 +83,36 @@ app.get('/api/appointments/booked', (req, res) => {
   });
 });
 
-app.post('/api/appointments', async (req, res) => {
-  try {
-    const { service, dentist, date, time, patientInfo } = req.body;
+app.post('/api/appointments', (req, res) => {
+  const { service, dentist, date, time, patientInfo } = req.body || {};
 
-    // Check if slot is already booked for this doctor
-    const checkSql = `
-      SELECT id FROM appointments 
-      WHERE (dentist = ? OR dentist = ?) 
-        AND appointment_date = ? 
-        AND appointment_time = ? 
-        AND status != 'cancelled'
-    `;
-    const dentistClean = dentist.toString().replace('Dr. ', '').trim();
+  if (!service || !dentist || !date || !time || !patientInfo ||
+      !patientInfo.name || !patientInfo.phone || !patientInfo.email) {
+    return res.status(400).json({ error: 'Service, dentist, date, time, and complete patient information are required.' });
+  }
 
-    db.get(checkSql, [dentist, dentistClean, date, time], async (err, existing) => {
-      if (err) {
-        console.error('Database error checking availability:', err);
-        return res.status(500).json({ error: 'Database check failed' });
-      }
+  const checkSql = `
+    SELECT id FROM appointments
+    WHERE (dentist = ? OR dentist = ?)
+      AND appointment_date = ?
+      AND appointment_time = ?
+      AND status != 'cancelled'
+  `;
+  const dentistClean = String(dentist).replace('Dr. ', '').trim();
 
-      if (existing) {
-        return res.status(400).json({
-          error: 'This time slot is already booked for the selected doctor. Please select an available slot.'
-        });
-      }
+  db.get(checkSql, [dentist, dentistClean, date, time], (err, existing) => {
+    if (err) {
+      console.error('Database error checking availability:', err);
+      return res.status(500).json({ error: 'Database check failed' });
+    }
 
-      // Create patient record
+    if (existing) {
+      return res.status(400).json({
+        error: 'This time slot is already booked for the selected doctor. Please select an available slot.'
+      });
+    }
+
+    Promise.resolve().then(async () => {
       const patient = await createPatient({
         name: patientInfo.name,
         phone: patientInfo.phone,
@@ -117,13 +120,12 @@ app.post('/api/appointments', async (req, res) => {
         isNewPatient: patientInfo.isNewPatient || false
       });
 
-      // Create appointment record
       const appointment = await createAppointment({
         patientId: patient.id,
-        service: service,
-        dentist: dentist,
-        date: date,
-        time: time,
+        service,
+        dentist,
+        date,
+        time,
         status: 'scheduled'
       });
 
@@ -131,19 +133,13 @@ app.post('/api/appointments', async (req, res) => {
         success: true,
         message: 'Appointment booked successfully',
         appointmentId: `APT-${appointment.id}`,
-        details: {
-          service,
-          dentist,
-          date,
-          time,
-          patientInfo
-        }
+        details: { service, dentist, date, time, patientInfo }
       });
+    }).catch((error) => {
+      console.error('Booking error:', error);
+      if (!res.headersSent) res.status(500).json({ error: 'Failed to save appointment. Please try again.' });
     });
-  } catch (error) {
-    console.error('Booking error:', error);
-    res.status(500).json({ error: 'Failed to book appointment' });
-  }
+  });
 });
 
 app.get('/api/appointments', async (req, res) => {

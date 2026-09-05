@@ -7,6 +7,7 @@ import Nav from '../components/Nav'
 import SectionHeader from '../components/SectionHeader'
 import Card from '../components/Card'
 import Button from '../components/Button'
+import { apiUrl, readJsonResponse } from '../lib/api'
 
 // Mock data for dentists and services
 const dentists = [
@@ -165,8 +166,8 @@ const Booking: React.FC = () => {
       const doc = dentists.find((d) => d.id === selectedDentist)
       if (!doc) return
       const dateStr = selectedDate.toISOString().split('T')[0]
-      fetch(`/api/appointments/booked?dentist=${encodeURIComponent(doc.name)}&date=${dateStr}`)
-        .then((res) => res.json())
+      fetch(apiUrl(`/api/appointments/booked?dentist=${encodeURIComponent(doc.name)}&date=${dateStr}`))
+        .then(readJsonResponse)
         .then((data) => {
           if (data && data.bookedSlots) {
             setBookedSlots(data.bookedSlots.map((s: any) => s.appointment_time))
@@ -205,13 +206,12 @@ const Booking: React.FC = () => {
         time: selectedTime,
         patientInfo,
       }
-      const response = await fetch('/api/appointments', {
+      const response = await fetch(apiUrl('/api/appointments'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(appointmentData),
       })
-      const result = await response.json()
-      if (!response.ok) throw new Error(result.error || 'Failed to book appointment')
+      const result = await readJsonResponse<{ message?: string }>(response)
       setIsLoading(false)
       alert(
         `Appointment booked successfully!\n\nService: ${services.find((s) => s.id === selectedService)?.title}\nDentist: ${doc?.name}\nDate: ${selectedDate.toLocaleDateString()}\nTime: ${selectedTime}`

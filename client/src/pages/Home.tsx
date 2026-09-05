@@ -4,6 +4,7 @@ import Nav from '../components/Nav'
 import SectionHeader from '../components/SectionHeader'
 import Card from '../components/Card'
 import Button from '../components/Button'
+import { apiUrl, readJsonResponse } from '../lib/api'
 
 // Interactive Home Widget Data & Component
 const homeServices = [
@@ -49,8 +50,8 @@ const InteractiveHomeWidget: React.FC = () => {
   useEffect(() => {
     if (currentDoctor && selectedDay) {
       const dateStr = `2026-09-${selectedDay < 10 ? '0' + selectedDay : selectedDay}`
-      fetch(`/api/appointments/booked?dentist=${encodeURIComponent(currentDoctor.name)}&date=${dateStr}`)
-        .then((res) => res.json())
+      fetch(apiUrl(`/api/appointments/booked?dentist=${encodeURIComponent(currentDoctor.name)}&date=${dateStr}`))
+        .then(readJsonResponse)
         .then((data) => {
           if (data && data.bookedSlots) {
             const taken = data.bookedSlots.map((s: any) => s.appointment_time)

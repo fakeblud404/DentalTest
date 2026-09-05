@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Button from '../components/Button'
+import { apiUrl, readJsonResponse } from '../lib/api'
 
 interface Appointment {
   id: number
@@ -59,11 +60,8 @@ const AdminAppointments: React.FC = () => {
     setLoading(true)
     setError(null)
     try {
-      const response = await fetch('/api/appointments')
-      if (!response.ok) {
-        throw new Error('Failed to fetch appointments')
-      }
-      const data = await response.json()
+      const response = await fetch(apiUrl('/api/appointments'))
+      const data = await readJsonResponse<{ appointments?: Appointment[] }>(response)
       // Sort oldest to newest (1 being oldest)
       const sorted = (data.appointments || []).sort(
         (a: Appointment, b: Appointment) => a.id - b.id

@@ -70,7 +70,7 @@ npm run dev
 ```
 This will start:
 - Frontend Vite dev server on http://localhost:3000
-- Backend Express server on http://localhost:5000
+- Backend Express server on http://localhost:5001
 
 #### Production Build
 ```bash
@@ -87,7 +87,7 @@ Create a `.env` file with the following variables:
 
 ```
 NODE_ENV=development
-PORT=5000
+PORT=5001
 # For production SMS/email (optional in MVP)
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
@@ -95,6 +95,16 @@ TWILIO_PHONE_NUMBER=+1234567890
 SENDGRID_API_KEY=your_sendgrid_api_key
 SENDGRID_FROM_EMAIL=info@kathmandudental.com.np
 JWT_SECRET=your_jwt_secret_key_here_make_it_long_and_random
+
+### Production API configuration
+
+The Vercel deployment serves the frontend only. Deploy the Express server and its database on a backend host, then set this Vercel environment variable for the client project:
+
+```
+VITE_API_URL=https://your-backend-domain.example.com
+```
+
+Redeploy the frontend after changing the variable. The backend must allow requests from the Vercel origin; the current Express CORS configuration allows cross-origin requests.
 ```
 
 ## API Endpoints

@@ -8,12 +8,14 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
     "@react-google-maps/api": "^2.19.0",
     "axios": "^1.5.0",
     "date-fns": "^2.29.3",
-    // "dental-clinic-website": "file:..",
     "lucide-react": "^0.263.0",
     "react": "^18.2.0",
     "react-calendar": "^6.0.1",

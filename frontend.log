@@ -1,0 +1,1017 @@
+
+> dental-clinic-website@1.0.0 client
+> npm run dev --prefix client
+
+
+> dental-clinic-client@1.0.0 dev
+> vite
+
+Port 3000 is in use, trying another one...
+
+  [32m[1mVITE[22m v4.5.14[39m  [2mready in [0m[1m341[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://local(node:22084) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2m12:15:45 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:16:47 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m12:17:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:17:42 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/Nav.tsx[22m
+[2m12:17:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Button.tsx, /src/index.css[22m
+[2m12:18:00 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Card.tsx, /src/index.css[22m
+[2m12:18:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeader.tsx, /src/index.css[22m
+[2m12:18:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:18:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.tsx, /src/index.css[22m
+[2m12:18:54 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+D:/DentalTest/client/src/pages/Services.tsx:100:7: ERROR: Multiple exports with the same name "default"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mD:/DentalTest/client/src/pages/Services.tsx[39m:81:0
+[33m  
+  [33mMultiple exports with the same name "default"[33m
+  98 |  export default Services;
+  99 |  
+  100|  export default Services;var _c;$RefreshReg$(_c, "Services");
+     |         ^
+  101|  
+  102|  if (import.meta.hot && !inWebWorker) {
+  [39m
+      at failureErrorWithLog (D:\DentalTest\client\node_modules\esbuild\lib\main.js:1649:15)
+      at D:\DentalTest\client\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (D:\DentalTest\client\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (D:\DentalTest\client\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (D:\DentalTest\client\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m12:18:54 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+D:/DentalTest/client/src/pages/Services.tsx:100:7: ERROR: Multiple exports with the same name "default"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mD:/DentalTest/client/src/pages/Services.tsx[39m:81:0
+[33m  
+  [33mMultiple exports with the same name "default"[33m
+  98 |  export default Services;
+  99 |  
+  100|  export default Services;var _c;$RefreshReg$(_c, "Services");
+     |         ^
+  101|  
+  102|  if (import.meta.hot && !inWebWorker) {
+  [39m
+      at failureErrorWithLog (D:\DentalTest\client\node_modules\esbuild\lib\main.js:1649:15)
+      at D:\DentalTest\client\node_modules\esbuild\lib\main.js:847:29
+      at responseCallbacks.<computed> (D:\DentalTest\client\node_modules\esbuild\lib\main.js:703:9)
+      at handleIncomingPacket (D:\DentalTest\client\node_modules\esbuild\lib\main.js:762:9)
+      at Socket.readFromStdout (D:\DentalTest\client\node_modules\esbuild\lib\main.js:679:7)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[2m12:19:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.tsx, /src/index.css[22m
+[2m12:19:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ServiceDetail.tsx, /src/index.css[22m
+[2m12:19:28 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.tsx, /src/index.css[22m
+[2m12:19:28 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\About.tsx: Unexpected token, expected "," (144:31)
+
+[0m [90m 142 |[31m
+ [90m 143 |[31m [36mexport[31m [36mdefault[31m [33mAbout[31m
+[31m[1m>[22m[31m[90m 144 |[31m                     src[33m=[31m{member[33m.[31mimage}
+ [90m     |[31m                                [31m[1m^[22m[31m
+ [90m 145 |[31m                     alt[33m=[31m{[32m`Photo of Dr. ${member.name}`[31m}
+ [90m 146 |[31m                     className[33m=[31m[32m"w-full h-48 object-cover rounded-lg mb-4"[31m
+ [90m 147 |[31m                   [33m/[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/About.tsx[39m:144:31
+[33m  142|  
+  143|  export default About
+  144|                      src={member.image}
+     |                                 ^
+  145|                      alt={`Photo of Dr. ${member.name}`}
+  146|                      className="w-full h-48 object-cover rounded-lg mb-4"[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.unexpected (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6640:16)
+      at TypeScriptParserMixin.expect (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6920:12)
+      at TypeScriptParserMixin.parseObjectLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11851:14)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11365:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D[2m12:19:28 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\About.tsx: Unexpected token, expected "," (144:31)
+
+[0m [90m 142 |[31m
+ [90m 143 |[31m [36mexport[31m [36mdefault[31m [33mAbout[31m
+[31m[1m>[22m[31m[90m 144 |[31m                     src[33m=[31m{member[33m.[31mimage}
+ [90m     |[31m                                [31m[1m^[22m[31m
+ [90m 145 |[31m                     alt[33m=[31m{[32m`Photo of Dr. ${member.name}`[31m}
+ [90m 146 |[31m                     className[33m=[31m[32m"w-full h-48 object-cover rounded-lg mb-4"[31m
+ [90m 147 |[31m                   [33m/[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/About.tsx[39m:144:31
+[33m  142|  
+  143|  export default About
+  144|                      src={member.image}
+     |                                 ^
+  145|                      alt={`Photo of Dr. ${member.name}`}
+  146|                      className="w-full h-48 object-cover rounded-lg mb-4"[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.unexpected (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6640:16)
+      at TypeScriptParserMixin.expect (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6920:12)
+      at TypeScriptParserMixin.parseObjectLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11851:14)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11365:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10881:25)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at Typ[2m12:19:28 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\About.tsx: Unexpected token, expected "," (144:31)
+
+[0m [90m 142 |[31m
+ [90m 143 |[31m [36mexport[31m [36mdefault[31m [33mAbout[31m
+[31m[1m>[22m[31m[90m 144 |[31m                     src[33m=[31m{member[33m.[31mimage}
+ [90m     |[31m                                [31m[1m^[22m[31m
+ [90m 145 |[31m                     alt[33m=[31m{[32m`Photo of Dr. ${member.name}`[31m}
+ [90m 146 |[31m                     className[33m=[31m[32m"w-full h-48 object-cover rounded-lg mb-4"[31m
+ [90m 147 |[31m                   [33m/[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/About.tsx[39m:144:31
+[33m  142|  
+  143|  export default About
+  144|                      src={member.image}
+     |                                 ^
+  145|                      alt={`Photo of Dr. ${member.name}`}
+  146|                      className="w-full h-48 object-cover rounded-lg mb-4"[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.unexpected (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6640:16)
+      at TypeScriptParserMixin.expect (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6920:12)
+      at TypeScriptParserMixin.parseObjectLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11851:14)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11365:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D[2m12:19:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.tsx, /src/index.css[22m
+[2m12:19:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/NewPatients.tsx, /src/index.css[22m
+[2m12:19:51 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\NewPatients.tsx: Unexpected token (134:14)
+
+[0m [90m 132 |[31m                 e[33m.[31mpreventDefault()[33m;[31m
+ [90m 133 |[31m                 alert([32m'Consent form download would start here.'[31m)[33m;[31m
+[31m[1m>[22m[31m[90m 134 |[31m               }}[33m>[31m
+ [90m     |[31m               [31m[1m^[22m[31m
+ [90m 135 |[31m                 [33mDownload[31m [33mForm[31m
+ [90m 136 |[31m               [33m<[31m[33m/[31m[33mLink[31m[33m>[31m
+ [90m 137 |[31m             [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/NewPatients.tsx[39m:134:14
+[33m  132|                  e.preventDefault();
+  133|                  alert('Consent form download would start here.');
+  134|                }}>
+     |                ^
+  135|                  Download Form
+  136|                </Link>[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.unexpected (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6640:16)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11468:22)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12924:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptPar[2m12:19:51 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\NewPatients.tsx: Unexpected token (134:14)
+
+[0m [90m 132 |[31m                 e[33m.[31mpreventDefault()[33m;[31m
+ [90m 133 |[31m                 alert([32m'Consent form download would start here.'[31m)[33m;[31m
+[31m[1m>[22m[31m[90m 134 |[31m               }}[33m>[31m
+ [90m     |[31m               [31m[1m^[22m[31m
+ [90m 135 |[31m                 [33mDownload[31m [33mForm[31m
+ [90m 136 |[31m               [33m<[31m[33m/[31m[33mLink[31m[33m>[31m
+ [90m 137 |[31m             [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/NewPatients.tsx[39m:134:14
+[33m  132|                  e.preventDefault();
+  133|                  alert('Consent form download would start here.');
+  134|                }}>
+     |                ^
+  135|                  Download Form
+  136|                </Link>[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.unexpected (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6640:16)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11468:22)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\De[2m12:20:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/NewPatients.tsx, /src/index.css[22m
+[2m12:20:04 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\NewPatients.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (134:12)
+
+[0m [90m 132 |[31m                 [33mPlease[31m contact us to verify [36mif[31m your specific plan is accepted[33m.[31m
+ [90m 133 |[31m               [33m<[31m[33m/[31m[33mp[31m[33m>[31m
+[31m[1m>[22m[31m[90m 134 |[31m             [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m             [31m[1m^[22m[31m
+ [90m 135 |[31m             [33m<[31m[33mdiv[31m[33m>[31m
+ [90m 136 |[31m               [33m<[31m[33mh3[31m className[33m=[31m[32m"text-2xl font-semibold mb-4"[31m[33m>[31m[33mFinancing[31m [33m&[31m [33mPayment[31m [33mOptions[31m[33m<[31m[33m/[31m[33mh3[31m[33m>[31m
+ [90m 137 |[31m               [33m<[31m[33mul[31m className[33m=[31m[32m"list-disc list-inside space-y-2 text-gray-700"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/NewPatients.tsx[39m:134:12
+[33m  132|                  Please contact us to verify if your specific plan is accepted.
+  133|                </p>
+  134|              </div>
+     |              ^
+  135|              <div>
+  136|                <h3 className="text-2xl font-semibold mb-4">Financing & Payment Options</h3>[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.jsxParseElementAt (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4758:18)
+      at TypeScriptParserMixin.jsxParseElement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4765:17)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4778:19)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:39
+      at TypeScriptParserMixin.tryParse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6928:20)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:18)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12924:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+      at parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (D:\DentalTest\client\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (D:\DentalTest\client\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (D:\DentalTest\client\node_modules\gensync\index.js:261:32)
+      at D:\DentalTest\client\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\DentalTest\client\node_modules\gensync\index.js:223:11)
+      at D:\DentalTest\client\node_modules\gensync\index.js:189:28
+      at D:\DentalTest\client\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at D:\DentalTest\client\node_modules\gensync\index.js:113:33
+      at step (D:\DentalTest\client\node_modules\gensync\index.js:287:14)
+      at D:\DentalTest\client\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\DentalTest\client\node_modules\gensync\index.js:223:11)
+[2m12:20:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/NewPatients.tsx, /src/index.css[22m
+[2m12:20:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Blog.tsx, /src/index.css[22m
+[2m12:20:34 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Blog.tsx: Unterminated regular expression. (113:22)
+
+[0m [90m 111 |[31m
+ [90m 112 |[31m [36mexport[31m [36mdefault[31m [33mBlog[31m
+[31m[1m>[22m[31m[90m 113 |[31m                     [33m<[31m[33m/[31m[33mspan[31m[33m>[31m
+ [90m     |[31m                       [31m[1m^[22m[31m
+ [90m 114 |[31m                     [33m<[31m[33mspan[31m className[33m=[31m[32m"ml-2 text-xs text-gray-500"[31m[33m>[31m
+ [90m 115 |[31m                       • {post[33m.[31mreadTime}
+ [90m 116 |[31m                     [33m<[31m[33m/[31m[33mspan[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Blog.tsx[39m:113:22
+[33m  111|  
+  112|  export default Blog
+  113|                      </span>
+     |                        ^
+  114|                      <span className="ml-2 text-xs text-gray-500">
+  115|                        • {post.readTime}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.readRegexp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6349:20)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11339:16)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11007:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11002:21)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10968:27)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9327:18)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10929:17)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13954:22)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9423:18)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13857:25)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9406:20)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12907:27)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+      at parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (D:\DentalTest\client\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (D:\DentalTest\client\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (D:\DentalTest\client\node_modules\gensync\index.js:261:32)
+      at D:\DentalTest\client\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\DentalTest\client\node_modules\gensync\index.js:223:11)
+      at D:\DentalTest\client\node_modules\gensync\index.js:189:28
+      at D:\DentalTest\client\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at D:\DentalTest\client\node_modules\gensync\index.js:113:33
+[2m12:20:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Blog.tsx, /src/index.css[22m
+[2m12:21:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Contact.tsx, /src/index.css[22m
+[2m12:21:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:21:35 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Booking.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (165:6)
+
+[0m [90m 163 |[31m           [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 164 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+[31m[1m>[22m[31m[90m 165 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m       [31m[1m^[22m[31m
+ [90m 166 |[31m
+ [90m 167 |[31m       {[90m/* Step 1: Patient Information */[31m}
+ [90m 168 |[31m       {step [33m===[31m [35m1[31m [33m&&[31m ([0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Booking.tsx[39m:165:6
+[33m  163|            </div>
+  164|          </div>
+  165|        </div>
+     |        ^
+  166|  
+  167|        {/* Step 1: Patient Information */}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.jsxParseElementAt (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4758:18)
+      at TypeScriptParserMixin.jsxParseElement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4765:17)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4775:19)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:39
+      at TypeScriptParserMixin.tryParse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6928:20)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:18)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12455:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12522:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11701:28)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at TypeScriptParserMixin.parseReturnStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13171:28)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12827:21)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+[2m12:21:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:31:09 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:31:10 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:31:19 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m12:31:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:31:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeader.tsx, /src/index.css[22m
+[2m12:31:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:44:46 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:44:52 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m12:44:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:45:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Button.tsx, /src/index.css[22m
+[2m12:45:07 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Card.tsx, /src/index.css[22m
+[2m12:45:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeader.tsx, /src/index.css[22m
+[2m12:45:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:45:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:45:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:45:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:51:28 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminAppointments.tsx, /src/index.css[22m
+[2m12:59:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:59:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:59:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:59:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:02:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m1:03:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m1:03:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:03:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:03:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+me="ml-2 text-xs text-gray-500">
+  115|                        • {post.readTime}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.readRegexp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6349:20)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11339:16)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11007:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11002:21)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10968:27)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9327:18)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10929:17)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13954:22)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9423:18)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13857:25)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9406:20)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12907:27)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+      at parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (D:\DentalTest\client\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (D:\DentalTest\client\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (D:\DentalTest\client\node_modules\gensync\index.js:261:32)
+      at D:\DentalTest\client\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\DentalTest\client\node_modules\gensync\index.js:223:11)
+      at D:\DentalTest\client\node_modules\gensync\index.js:189:28
+      at D:\DentalTest\client\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at D:\DentalTest\client\node_modules\gensync\index.js:113:33
+[2m12:20:35 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Blog.tsx: Unterminated regular expression. (113:22)
+
+[0m [90m 111 |[31m
+ [90m 112 |[31m [36mexport[31m [36mdefault[31m [33mBlog[31m
+[31m[1m>[22m[31m[90m 113 |[31m                     [33m<[31m[33m/[31m[33mspan[31m[33m>[31m
+ [90m     |[31m                       [31m[1m^[22m[31m
+ [90m 114 |[31m                     [33m<[31m[33mspan[31m className[33m=[31m[32m"ml-2 text-xs text-gray-500"[31m[33m>[31m
+ [90m 115 |[31m                       • {post[33m.[31mreadTime}
+ [90m 116 |[31m                     [33m<[31m[33m/[31m[33mspan[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Blog.tsx[39m:113:22
+[33m  111|  
+  112|  export default Blog
+  113|                      </span>
+     |                        ^
+  114|                      <span className="ml-2 text-xs text-gray-500">
+  115|                        • {post.readTime}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.readRegexp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6349:20)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11339:16)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11007:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11002:21)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10968:27)
+      at TypeScriptParserMixin.parseExprOp (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9327:18)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10929:17)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13954:22)
+      at TypeScriptParserMixin.parseExportDefaultExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9423:18)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13857:25)
+      at TypeScriptParserMixin.parseExport (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9406:20)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12907:27)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+      at parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (D:\DentalTest\client\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (D:\DentalTest\client\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (D:\DentalTest\client\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (D:\DentalTest\client\node_modules\gensync\index.js:261:32)
+      at D:\DentalTest\client\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\DentalTest\client\node_modules\gensync\index.js:223:11)
+      at D:\DentalTest\client\node_modules\gensync\index.js:189:28
+      at D:\DentalTest\client\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at D:\DentalTest\client\node_modules\gensync\index.js:113:33
+[2m12:20:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Blog.tsx, /src/index.css[22m
+[2m12:21:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Contact.tsx, /src/index.css[22m
+[2m12:21:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:21:35 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Booking.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (165:6)
+
+[0m [90m 163 |[31m           [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 164 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+[31m[1m>[22m[31m[90m 165 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m       [31m[1m^[22m[31m
+ [90m 166 |[31m
+ [90m 167 |[31m       {[90m/* Step 1: Patient Information */[31m}
+ [90m 168 |[31m       {step [33m===[31m [35m1[31m [33m&&[31m ([0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Booking.tsx[39m:165:6
+[33m  163|            </div>
+  164|          </div>
+  165|        </div>
+     |        ^
+  166|  
+  167|        {/* Step 1: Patient Information */}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.jsxParseElementAt (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4758:18)
+      at TypeScriptParserMixin.jsxParseElement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4765:17)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4775:19)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:39
+      at TypeScriptParserMixin.tryParse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6928:20)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:18)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12455:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12522:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11701:28)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at TypeScriptParserMixin.parseReturnStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13171:28)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12827:21)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+[2m12:21:35 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Booking.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (165:6)
+
+[0m [90m 163 |[31m           [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 164 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+[31m[1m>[22m[31m[90m 165 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m       [31m[1m^[22m[31m
+ [90m 166 |[31m
+ [90m 167 |[31m       {[90m/* Step 1: Patient Information */[31m}
+ [90m 168 |[31m       {step [33m===[31m [35m1[31m [33m&&[31m ([0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Booking.tsx[39m:165:6
+[33m  163|            </div>
+  164|          </div>
+  165|        </div>
+     |        ^
+  166|  
+  167|        {/* Step 1: Patient Information */}[39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptParserMixin.jsxParseElementAt (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4758:18)
+      at TypeScriptParserMixin.jsxParseElement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4765:17)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4775:19)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:39
+      at TypeScriptParserMixin.tryParse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6928:20)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9796:18)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12455:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12522:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11701:28)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at TypeScriptParserMixin.parseExpressionBase (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10805:23)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10801:17)
+      at TypeScriptParserMixin.parseReturnStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13171:28)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12827:21)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+[2m12:21:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:31:09 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:31:19 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m12:31:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:31:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeader.tsx, /src/index.css[22m
+[2m12:31:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:44:46 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:44:52 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m12:44:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:45:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Button.tsx, /src/index.css[22m
+[2m12:45:06 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Card.tsx, /src/index.css[22m
+[2m12:45:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionHeader.tsx, /src/index.css[22m
+[2m12:45:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:45:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Nav.tsx, /src/index.css[22m
+[2m12:45:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:45:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:51:28 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminAppointments.tsx, /src/index.css[22m
+[2m12:59:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:59:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m12:59:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m12:59:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:02:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m1:03:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Booking.tsx, /src/index.css[22m
+[2m1:03:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:03:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Home.tsx: Identifier 'currentDoctor' has already been declared. (76:8)
+
+[0m [90m 74 |[31m
+ [90m 75 |[31m   [36mconst[31m selectedService [33m=[31m homeServices[33m.[31mfind((s) [33m=>[31m s[33m.[31mid [33m===[31m selectedServiceId)
+[31m[1m>[22m[31m[90m 76 |[31m   [36mconst[31m currentDoctor [33m=[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 77 |[31m     homeDoctors[33m.[31mfind((d) [33m=>[31m d[33m.[31mid [33m===[31m selectedDoctorId) [33m||[31m availableDoctors[[35m0[31m] [33m||[31m homeDoctors[[35m0[31m]
+ [90m 78 |[31m
+ [90m 79 |[31m   [36mconst[31m calendarDays [33m=[31m [[35m14[31m[33m,[31m [35m15[31m[33m,[31m [35m16[31m[33m,[31m [35m17[31m[33m,[31m [35m18[31m[33m,[31m [35m19[31m[33m,[31m [35m20[31m[33m,[31m [35m21[31m[33m,[31m [35m22[31m[33m,[31m [35m23[31m[33m,[31m [35m24[31m[33m,[31m [35m25[31m[33m,[31m [35m26[31m[33m,[31m [35m27[31m][0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Home.tsx[39m:76:8
+[33m  74 |  
+  75 |    const selectedService = homeServices.find((s) => s.id === selectedServiceId)
+  76 |    const currentDoctor =
+     |          ^
+  77 |      homeDoctors.find((d) => d.id === selectedDoctorId) || availableDoctors[0] || homeDoctors[0]
+  78 |  [39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1623:19)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1589:12)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4896:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7588:16)
+      at TypeScriptParserMixin.checkIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7584:12)
+      at TypeScriptParserMixin.checkLVal (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7521:12)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13441:10)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9773:11)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13412:12)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13413:91)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+[2m1:03:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Home.tsx: Identifier 'currentDoctor' has already been declared. (76:8)
+
+[0m [90m 74 |[31m
+ [90m 75 |[31m   [36mconst[31m selectedService [33m=[31m homeServices[33m.[31mfind((s) [33m=>[31m s[33m.[31mid [33m===[31m selectedServiceId)
+[31m[1m>[22m[31m[90m 76 |[31m   [36mconst[31m currentDoctor [33m=[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 77 |[31m     homeDoctors[33m.[31mfind((d) [33m=>[31m d[33m.[31mid [33m===[31m selectedDoctorId) [33m||[31m availableDoctors[[35m0[31m] [33m||[31m homeDoctors[[35m0[31m]
+ [90m 78 |[31m
+ [90m 79 |[31m   [36mconst[31m calendarDays [33m=[31m [[35m14[31m[33m,[31m [35m15[31m[33m,[31m [35m16[31m[33m,[31m [35m17[31m[33m,[31m [35m18[31m[33m,[31m [35m19[31m[33m,[31m [35m20[31m[33m,[31m [35m21[31m[33m,[31m [35m22[31m[33m,[31m [35m23[31m[33m,[31m [35m24[31m[33m,[31m [35m25[31m[33m,[31m [35m26[31m[33m,[31m [35m27[31m][0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Home.tsx[39m:76:8
+[33m  74 |  
+  75 |    const selectedService = homeServices.find((s) => s.id === selectedServiceId)
+  76 |    const currentDoctor =
+     |          ^
+  77 |      homeDoctors.find((d) => d.id === selectedDoctorId) || availableDoctors[0] || homeDoctors[0]
+  78 |  [39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1623:19)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1589:12)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4896:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7588:16)
+      at TypeScriptParserMixin.checkIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7584:12)
+      at TypeScriptParserMixin.checkLVal (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7521:12)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13441:10)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9773:11)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13412:12)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13413:91)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+[2m1:03:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[2m1:03:20 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Home.tsx: Identifier 'currentDoctor' has already been declared. (76:8)
+
+[0m [90m 74 |[31m
+ [90m 75 |[31m   [36mconst[31m selectedService [33m=[31m homeServices[33m.[31mfind((s) [33m=>[31m s[33m.[31mid [33m===[31m selectedServiceId)
+[31m[1m>[22m[31m[90m 76 |[31m   [36mconst[31m currentDoctor [33m=[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 77 |[31m     homeDoctors[33m.[31mfind((d) [33m=>[31m d[33m.[31mid [33m===[31m selectedDoctorId) [33m||[31m availableDoctors[[35m0[31m] [33m||[31m homeDoctors[[35m0[31m]
+ [90m 78 |[31m
+ [90m 79 |[31m   [36mconst[31m calendarDays [33m=[31m [[35m14[31m[33m,[31m [35m15[31m[33m,[31m [35m16[31m[33m,[31m [35m17[31m[33m,[31m [35m18[31m[33m,[31m [35m19[31m[33m,[31m [35m20[31m[33m,[31m [35m21[31m[33m,[31m [35m22[31m[33m,[31m [35m23[31m[33m,[31m [35m24[31m[33m,[31m [35m25[31m[33m,[31m [35m26[31m[33m,[31m [35m27[31m][0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Home.tsx[39m:76:8
+[33m  74 |  
+  75 |    const selectedService = homeServices.find((s) => s.id === selectedServiceId)
+  76 |    const currentDoctor =
+     |          ^
+  77 |      homeDoctors.find((d) => d.id === selectedDoctorId) || availableDoctors[0] || homeDoctors[0]
+  78 |  [39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1623:19)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1589:12)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4896:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7588:16)
+      at TypeScriptParserMixin.checkIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7584:12)
+      at TypeScriptParserMixin.checkLVal (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7521:12)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13441:10)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9773:11)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13412:12)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13413:91)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+[2m1:03:20 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\DentalTest\client\src\pages\Home.tsx: Identifier 'currentDoctor' has already been declared. (76:8)
+
+[0m [90m 74 |[31m
+ [90m 75 |[31m   [36mconst[31m selectedService [33m=[31m homeServices[33m.[31mfind((s) [33m=>[31m s[33m.[31mid [33m===[31m selectedServiceId)
+[31m[1m>[22m[31m[90m 76 |[31m   [36mconst[31m currentDoctor [33m=[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 77 |[31m     homeDoctors[33m.[31mfind((d) [33m=>[31m d[33m.[31mid [33m===[31m selectedDoctorId) [33m||[31m availableDoctors[[35m0[31m] [33m||[31m homeDoctors[[35m0[31m]
+ [90m 78 |[31m
+ [90m 79 |[31m   [36mconst[31m calendarDays [33m=[31m [[35m14[31m[33m,[31m [35m15[31m[33m,[31m [35m16[31m[33m,[31m [35m17[31m[33m,[31m [35m18[31m[33m,[31m [35m19[31m[33m,[31m [35m20[31m[33m,[31m [35m21[31m[33m,[31m [35m22[31m[33m,[31m [35m23[31m[33m,[31m [35m24[31m[33m,[31m [35m25[31m[33m,[31m [35m26[31m[33m,[31m [35m27[31m][0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/DentalTest/client/src/pages/Home.tsx[39m:76:8
+[33m  74 |  
+  75 |    const selectedService = homeServices.find((s) => s.id === selectedServiceId)
+  76 |    const currentDoctor =
+     |          ^
+  77 |      homeDoctors.find((d) => d.id === selectedDoctorId) || availableDoctors[0] || homeDoctors[0]
+  78 |  [39m
+      at constructor (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:369:19)
+      at TypeScriptParserMixin.raise (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:6620:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1623:19)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:1589:12)
+      at TypeScriptScopeHandler.declareName (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4896:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7588:16)
+      at TypeScriptParserMixin.checkIdentifier (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7584:12)
+      at TypeScriptParserMixin.checkLVal (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:7521:12)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13441:10)
+      at TypeScriptParserMixin.parseVarId (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9773:11)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13412:12)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseStatementListItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12776:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:61)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseBlock (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseFunctionBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12129:24)
+      at TypeScriptParserMixin.parseArrowExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12104:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11713:12)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11357:23)
+      at TypeScriptParserMixin.parseExprAtom (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:4780:20)
+      at TypeScriptParserMixin.parseExprSubscripts (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11102:23)
+      at TypeScriptParserMixin.parseUpdate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11087:21)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:11067:23)
+      at TypeScriptParserMixin.parseMaybeUnary (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9858:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10920:61)
+      at TypeScriptParserMixin.parseExprOps (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10925:23)
+      at TypeScriptParserMixin.parseMaybeConditional (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10902:23)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10852:21)
+      at TypeScriptParserMixin.parseMaybeAssign (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9807:20)
+      at D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:39
+      at TypeScriptParserMixin.allowInAnd (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12450:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10821:17)
+      at TypeScriptParserMixin.parseVar (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13413:91)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13259:10)
+      at TypeScriptParserMixin.parseVarStatement (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9429:31)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12880:23)
+      at TypeScriptParserMixin.parseStatementContent (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:9529:18)
+      at TypeScriptParserMixin.parseStatementLike (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12796:17)
+      at TypeScriptParserMixin.parseModuleItem (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12773:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13345:36)
+      at TypeScriptParserMixin.parseBlockBody (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:13338:10)
+      at TypeScriptParserMixin.parseProgram (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12651:10)
+      at TypeScriptParserMixin.parseTopLevel (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:12641:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:14517:25)
+      at TypeScriptParserMixin.parse (D:\DentalTest\client\node_modules\@babel\parser\lib\index.js:10147:18)
+[2m1:03:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m

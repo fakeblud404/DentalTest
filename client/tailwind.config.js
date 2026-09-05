@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'ink-navy': '#0b3558',
+        'signal-blue': '#006bff',
+        'slate-gray': '#476788',
+        'mist-gray': '#a6bbd1',
+        cloud: '#f8f9fb',
+        paper: '#ffffff',
+        pebble: '#f0f3f8',
+        hairline: '#d4e0ed',
+        carbon: '#0a0a0a',
+        'coral-magenta': '#e55cff',
+        'sky-cyan': '#0099ff',
+        'deep-cobalt': '#004eba',
+        // Alias maps for backward compatibility
+        'primary-indigo': '#006bff',
+        'deep-ink': '#0b3558',
+        cream: '#f8f9fb',
+        'pure-white': '#ffffff',
+      },
+      fontFamily: {
+        gilroy: ['Manrope', 'Gilroy', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', 'Gilroy', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        saans: ['Manrope', 'Gilroy', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        reckless: ['Manrope', 'Gilroy', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        caption: ['12px', '1.5'],
+        'body-sm': ['14px', '1.4'],
+        body: ['16px', '1.0'],
+        button: ['18px', '1.6'],
+        'body-lg': ['20px', '1.4'],
+        subheading: ['28px', '1.4'],
+        'heading-sm': ['38px', '1.21'],
+        heading: ['50px', '1.2'],
+        'heading-lg': ['68px', '1.2'],
+        display: ['80px', '1.2'],
+      },
+      spacing: {
+        '8': '8px',
+        '16': '16px',
+        '24': '24px',
+        '32': '32px',
+        '40': '40px',
+        '48': '48px',
+        '56': '56px',
+        '64': '64px',
+        '72': '72px',
+        '96': '96px',
+      },
+      maxWidth: {
+        page: '1200px',
+      },
+      borderRadius: {
+        cards: '24px',
+        small: '4px',
+        badges: '9999px',
+        inputs: '8px',
+        buttons: '8px',
+        productCards: '16px',
+      },
+      boxShadow: {
+        sm: 'rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 4px 10px 0px, rgba(71, 103, 136, 0.05) 0px 10px 20px 0px',
+        'sm-2': 'rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.08) 0px 30px 50px 0px',
+        'sm-3': 'rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.06) 0px 15px 30px 0px',
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
+};

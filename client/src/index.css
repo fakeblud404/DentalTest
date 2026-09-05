@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colors */
+    --color-ink-navy: #0b3558;
+    --color-signal-blue: #006bff;
+    --color-slate-gray: #476788;
+    --color-mist-gray: #a6bbd1;
+    --color-cloud: #f8f9fb;
+    --color-paper: #ffffff;
+    --color-pebble: #f0f3f8;
+    --color-hairline: #d4e0ed;
+    --color-carbon: #0a0a0a;
+    --color-coral-magenta: #e55cff;
+    --color-sky-cyan: #0099ff;
+    --color-deep-cobalt: #004eba;
+
+    /* Typography */
+    --font-gilroy: 'Manrope', 'Gilroy', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* Shadows */
+    --shadow-sm: rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 4px 10px 0px, rgba(71, 103, 136, 0.05) 0px 10px 20px 0px;
+    --shadow-sm-2: rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.08) 0px 30px 50px 0px;
+    --shadow-sm-3: rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.06) 0px 15px 30px 0px;
+  }
+
+  body {
+    background-color: var(--color-cloud);
+    color: var(--color-ink-navy);
+    font-family: var(--font-gilroy);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-gilroy);
+    color: var(--color-ink-navy);
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  /* Primary Action CTA - Signal Blue fill, 8px radius */
+  .btn-primary {
+    background-color: var(--color-signal-blue);
+    color: var(--color-paper);
+    border-radius: 8px;
+    font-family: var(--font-gilroy);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 10px 24px;
+    border: none;
+    box-shadow: var(--shadow-sm-3);
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: justify;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #0056cc;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm-2);
+  }
+
+  /* Dark CTA - Ink Navy fill, 8px radius */
+  .btn-dark {
+    background-color: var(--color-ink-navy);
+    color: var(--color-paper);
+    border-radius: 8px;
+    font-family: var(--font-gilroy);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 10px 24px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .btn-dark:hover {
+    background-color: #082640;
+    transform: translateY(-1px);
+  }
+
+  /* Ghost Text Link */
+  .btn-ghost {
+    background: transparent;
+    color: var(--color-ink-navy);
+    font-family: var(--font-gilroy);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 16px;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-ghost:hover {
+    color: var(--color-signal-blue);
+  }
+
+  /* Outlined White Button */
+  .btn-outline {
+    background: transparent;
+    color: var(--color-ink-navy);
+    border: 1px solid var(--color-hairline);
+    border-radius: 8px;
+    font-family: var(--font-gilroy);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-outline:hover {
+    border-color: var(--color-signal-blue);
+    background-color: var(--color-pebble);
+  }
+
+  /* Product Card Surface - 16px radius, blue-tinted shadow */
+  .card-product {
+    background-color: var(--color-paper);
+    border-radius: 16px;
+    border: 1px solid var(--color-hairline);
+    box-shadow: var(--shadow-sm-2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-product:hover {
+    box-shadow: var(--shadow-sm-2);
+    transform: translateY(-2px);
+  }
+
+  /* General Feature Panel Card - 24px radius */
+  .card-panel {
+    background-color: var(--color-paper);
+    border-radius: 24px;
+    border: 1px solid var(--color-hairline);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Pill Badge */
+  .pill-badge {
+    background-color: #e6f0ff;
+    color: var(--color-deep-cobalt);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 4px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+}

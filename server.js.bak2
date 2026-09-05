@@ -1,0 +1,141 @@
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+const path = require('path');
+const { db, createPatient, createAppointment, createContactMessage } = require('./db');
+
+// Load environment variables
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 5001; // Changed from 5000 to 5001 to avoid conflict
+
+// Middleware
+app.use(helmet());
+app.use(cors());
+app.use(morgan('combined'));
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+// Serve static files from React app in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/dist')));
+}
+
+// API Routes
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
+});
+
+// Mock API endpoints for demo
+app.get('/api/services', (req, res) => {
+  res.json([
+    { id: 'cleaning', title: 'Cleanings & Prevention', icon: 'tooth' },
+    { id: 'fillings', title: 'Fillings & Restorations', icon: 'circle-help' },
+    { id: 'root-canal', title: 'Root Canal Therapy', icon: 'zap' },
+    { id: 'implants', title: 'Dental Implants', icon: 'sparkles' },
+    { id: 'orthodontics', title: 'Orthodontics & Invisalign', icon: 'sparkles' },
+    { id: 'whitening', title: 'Teeth Whitening', icon: 'sun' },
+    { id: 'emergency', title: 'Emergency Dental Care', icon: 'alert-triangle' },
+    { id: 'pediatric', title: 'Pediatric Dentistry', icon: 'child' },
+    { id: 'cosmetic', title: 'Cosmetic Dentistry', icon: 'palette' }
+  ]);
+});
+
+app.get('/api/dentists', (req, res) => {
+  res.json([
+    { id: 1, name: 'Dr. Shrestha', specialties: ['implants', 'cosmetic'], rating: 4.8, image: '/images/team/dr-shrestha.jpg' },
+    { id: 2, name: 'Dr. Sharma', specialties: ['orthodontics', 'pediatric'], rating: 4.9, image: '/images/team/dr-sharma.jpg' },
+    { id: 3, name: 'Dr. Patel', specialties: ['cleaning', 'fillings', 'root-canal'], rating: 4.7, image: '/images/team/dr-patel.jpg' }
+  ]);
+});
+
+app.post('/api/appointments', async (req, res) => {
+  try {
+    const { service, dentist, date, time, patientInfo } = req.body;
+
+    // Create patient record
+    const patient = await createPatient({
+      name: patientInfo.name,
+      phone: patientInfo.phone,
+      email: patientInfo.email,
+      isNewPatient: patientInfo.isNewPatient || false
+    });
+
+    // Create appointment record
+    const appointment = await createAppointment({
+      patientId: patient.id,
+      service: service,
+      dentist: dentist,
+      date: date,
+      time: time,
+      status: 'scheduled'
+    });
+
+    // In real app, we would send SMS/email confirmations here
+    // For demo, we'll just return success
+
+    res.json({
+      success: true,
+      message: 'Appointment booked successfully',
+      appointmentId: `APT-${appointment.id}`,
+      details: {
+        service,
+        dentist,
+        date,
+        time,
+        patientInfo
+      }
+    });
+  } catch (error) {
+    console.error('Booking error:', error);
+    res.status(500).json({ error: 'Failed to book appointment' });
+  }
+});
+
+app.post('/api/contact', async (req, res) => {
+  try {
+    const { name, phone, email, subject, message } = req.body;
+
+    // Save contact message
+    const contact = await createContactMessage({
+      name,
+      phone,
+      email,
+      subject,
+      message
+    });
+
+    // In real app, we would send email notification here
+    // For demo, we'll just return success
+
+    res.json({
+      success: true,
+      message: 'Thank you for your message. We will respond within 24 hours.'
+    });
+  } catch (error) {
+    console.error('Contact error:', error);
+    res.status(500).json({ error: 'Failed to send message' });
+  }
+});
+
+// Serve React app for all other routes (client-side routing)
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/dist', 'index.html'));
+  });
+}
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: 'Something went wrong!' });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+module.exports = app;

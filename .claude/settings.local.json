@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/api/health)",
+      "Bash(curl -s http://localhost:3000/api/services)",
+      "Bash(rtk curl *)",
+      "Bash(curl -s -X POST http://localhost:3000/api/appointments -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(curl -s http://localhost:3000/services/implants)",
+      "Bash(timeout 5 bash -c \"while ! curl -s http://localhost:5001/api/health > /dev/null; do sleep 1; done; echo 'Backend is responding'\")",
+      "Bash(timeout 10 bash -c \"while ! curl -s http://localhost:3000 > /dev/null; do sleep 1; done; echo 'Frontend is responding'\")",
+      "Bash(curl -s http://localhost:3000/booking)",
+      "Bash(curl -s http://localhost:3000/src/main.tsx)",
+      "Bash(curl -s http://localhost:3000/src/App.tsx)",
+      "Bash(curl -s http://localhost:3000/src/pages/ServiceDetail.tsx)",
+      "Bash(curl -s http://localhost:3000/services/cleaning)",
+      "Bash(rtk grep *)",
+      "Bash(npm install *)",
+      "PowerShell(npm run *)"
+    ]
+  }
+}

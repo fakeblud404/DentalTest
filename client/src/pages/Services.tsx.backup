@@ -1,0 +1,85 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const services = [
+  { id: 'cleaning', title: 'Cleanings & Prevention', description: 'Regular checkups, cleanings, and preventive care', icon: 'tooth' },
+  { id: 'fillings', title: 'Fillings & Restorations', description: 'Tooth-colored fillings and dental restorations', icon: 'circle-help' },
+  { id: 'root-canal', title: 'Root Canal Therapy', description: 'Gentle treatment to save infected teeth', icon: 'zap' },
+  { id: 'implants', title: 'Dental Implants', description: 'Permanent solution for missing teeth', icon: 'sparkles' },
+  { id: 'orthodontics', title: 'Orthodontics & Invisalign', description: 'Braces and clear aligners for straighter smiles', icon: 'sparkles' },
+  { id: 'whitening', title: 'Teeth Whitening', description: 'Professional whitening for brighter smiles', icon: 'sun' },
+  { id: 'emergency', title: 'Emergency Dental Care', description: 'Same-day care for dental emergencies', icon: 'alert-triangle' },
+  { id: 'pediatric', title: 'Pediatric Dentistry', description: 'Gentle dental care for children', icon: 'child' },
+  { id: 'cosmetic', title: 'Cosmetic Dentistry', description: 'Veneers, bonding, and smile makeovers', icon: 'palette' }
+]
+
+const Services: React.FC = () => {
+  return (
+    <div>
+      <section className="py-16">
+        <div className="container">
+          <div className="flex justify-between items-center mb-12">
+            <h1 className="text-3xl font-bold">Our Dental Services</h1>
+            <Link to="/new-patients" className="btn-outline">
+              New Patients Start Here
+            </Link>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {services.map(service => (
+              <Link key={service.id} to={`/services/${service.id}`} className="card hover:shadow-md transition-shadow duration-200">
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <svg className="w-8 h-8 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Dynamic icons based on service */}
+                      {service.id === 'cleaning' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138a3.42 3.42 0 00.806 1.946 3.42 3.42 0 01-3.138 1.946 3.42 3.42 0 00-3.138-1.946 3.42 3.42 0 01-.806-3.138 3.42 3.42 0 00-4.438 0 3.42 3.42 0 01-1.946-.806 3.42 3.42 0 00-.806 3.138A3.42 3.42 0 014.697 12.13a3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-.806 3.138 3.42 3.42 0 003.138 1.946 3.42 3.42 0 004.095 0 3.42 3.42 0 013.138-1.946 3.42 3.42 0 00-.806-3.138 3.42 3.42 0 00-2.562-.663" />
+                      )}
+                      {service.id === 'fillings' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                      )}
+                      {service.id === 'root-canal' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 10-18 0 9 9 0 0018 0z" />
+                      )}
+                      {service.id === 'implants' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                      )}
+                      {service.id === 'orthodontics' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M9 19l3-3m0 0l3 3m-3-3v3m3-3V10" />
+                      )}
+                      {service.id === 'whitening' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1.343a1 1 0 00-.707.293l-1.414 1.414a1 1 0 00-.293.707V9a1 1 0 00-1-1h-2a1 1 0 00-1 1v4a1 1 0 00-.293.707l-1.414 1.414A1 1 0 009 13.343V3a1 1 0 011-1h4a1 1 0 011 1v8a1 1 0 00-.293.707l-1.414 1.414A1 1 0 0011 13.343V3a1 1 0 011-1h4a1 1 0 011 1v8a1 1 0 00-.293.707l-1.414 1.414A1 1 0 0013 13.343V3a1 1 0 011-1h4a1 1 0 011 1v8a1 1 0 00-.293.707l-1.414 1.414A1 1 0 0015 13.343V3a1 1 0 011-1h4z" />
+                      )}
+                      {service.id === 'emergency' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4h-.788c-1.09.036-1.956.954-1.732 3z" />
+                      )}
+                      {service.id === 'pediatric' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M5 13l2 2 2-2M13 7l-2-2-2 2M7 17l2 2 2-2M11 11l2 2 2-2" />
+                      )}
+                      {service.id === 'cosmetic' && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2.252a9 9 0 110 17.496M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                      )}
+                      {!['cleaning','fillings','root-canal','implants','orthodontics','whitening','emergency','pediatric','cosmetic'].includes(service.id) && (
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                      )}
+                    </svg>
+                    <h3 className="text-lg font-semibold">{service.title}</h3>
+                  </div>
+                  <p className="text-gray-600">{service.description}</p>
+                  <div className="mt-4 flex items-center">
+                    <span className="text-primary-600 font-medium">Learn More →</span>
+                    <svg className="ml-2 w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l6 6-6 6" />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default Services
